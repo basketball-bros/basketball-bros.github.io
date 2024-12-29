@@ -1,0 +1,17 @@
+{
+  "short_name": "Basketball.io Dunk",
+  "name": "Add Basketball.io Dunk to Home Screen To Fast Play",
+  "display": "standalone",
+  "id": "/?source=pwa",
+  "start_url": "/?source=pwa",
+  "icons": [
+      {
+          "src": "game-icon.png",
+          "sizes": "any",
+          "type": "image/png",
+          "purpose": "any"
+      }
+  ]
+}
+
+  

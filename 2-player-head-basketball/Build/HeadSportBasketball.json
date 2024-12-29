@@ -1,0 +1,13 @@
+{
+"companyName": "JavadRastad",
+"productName": "Head Sport Basketball",
+"dataUrl": "HeadSportBasketball.data.unityweb",
+"wasmCodeUrl": "HeadSportBasketball.wasm.code.unityweb",
+"wasmFrameworkUrl": "HeadSportBasketball.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"backgroundUrl": "HeadSportBasketball.jpg",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#FFFFFF"
+}
