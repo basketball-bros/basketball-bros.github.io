@@ -1,1 +1,632 @@
-basketball-bros.github.io
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sprunki Green | 10+</title>
+    <meta
+      name="description"
+      content="Play 10+ Sprunki Games & More Unblocked Games. Play Now !"
+    />
+    <link rel="icon" type="image/png" href="./S.png" />
+    <meta property="og:image" content="./Sprunki.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="1200" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Q29MMYXXFW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-Q29MMYXXFW");
+    </script>
+    <style>
+      :root {
+        --neon-primary: #00f3ff;
+        --neon-secondary: #ff00ff;
+        --dark-bg: #0a0a0a;
+        --card-bg: #151515;
+        --gradient: linear-gradient(
+          45deg,
+          var(--neon-primary),
+          var(--neon-secondary)
+        );
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: var(--dark-bg);
+        color: #fff;
+        overflow-x: hidden;
+      }
+
+      /* Navbar */
+      .navbar {
+        background: rgba(0, 0, 0, 0.95);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--neon-primary);
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        padding: 1rem 5%;
+      }
+
+      .nav-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 2rem;
+        font-weight: 700;
+      }
+
+      .logo span {
+        background: var(--gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: glow 3s ease-in-out infinite;
+      }
+
+      .nav-logo {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+      }
+
+      /* Hero Section */
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding-top: 80px;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url("gaming-bg.jpg") center/cover;
+      }
+
+      .hero-content {
+        text-align: center;
+        max-width: 800px;
+        padding: 2rem;
+      }
+
+      .hero-title {
+        font-size: 4rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        animation: slideUp 1s ease;
+      }
+
+      .hero-subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        color: #ccc;
+      }
+
+      .hero-description {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: left;
+      }
+
+      .features {
+        margin: 2rem 0;
+        padding: 2rem;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
+      }
+
+      .features h2 {
+        color: var(--neon-primary);
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+
+      .features ul {
+        list-style: none;
+      }
+
+      .features li {
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: baseline;
+        gap: 0.5rem;
+      }
+
+      .features strong {
+        color: var(--neon-primary);
+        min-width: 180px;
+      }
+
+      .cta-section {
+        text-align: center;
+        margin-top: 2rem;
+      }
+
+      .cta-section p {
+        margin-bottom: 1.5rem;
+      }
+
+      /* Game Grid */
+      .games-section {
+        padding: 5rem 5%;
+        background: var(--dark-bg);
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+        color: var(--neon-primary);
+      }
+
+      .games-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      .game-card {
+        background: var(--card-bg);
+        border-radius: 15px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .game-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 0 20px rgba(0, 243, 255, 0.2);
+      }
+
+      .game-image {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+      }
+
+      .game-info {
+        padding: 1.5rem;
+      }
+
+      .game-title {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+        color: var(--neon-primary);
+      }
+
+      .game-desc {
+        color: #999;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+      }
+
+      .play-btn {
+        display: inline-block;
+        padding: 0.8rem 2rem;
+        background: var(--gradient);
+        color: white;
+        text-decoration: none;
+        border-radius: 25px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+
+      .play-btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(0, 243, 255, 0.4);
+      }
+
+      /* Animations */
+      @keyframes glow {
+        0%,
+        100% {
+          text-shadow: 0 0 10px rgba(0, 243, 255, 0.5);
+        }
+        50% {
+          text-shadow: 0 0 20px rgba(0, 243, 255, 0.8);
+        }
+      }
+
+      @keyframes slideUp {
+        from {
+          transform: translateY(50px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .hero-title {
+          font-size: 2.5rem;
+        }
+        .section-title {
+          font-size: 2rem;
+        }
+      }
+
+      .keywords-section {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 2rem 0;
+      }
+
+      .keyword-tag {
+        padding: 0.5rem 1.5rem;
+        background: var(--card-bg);
+        border: 1px solid var(--neon-primary);
+        border-radius: 25px;
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+
+      .keyword-tag:hover {
+        background: var(--gradient);
+        transform: translateY(-3px);
+        box-shadow: 0 0 15px rgba(0, 243, 255, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="logo">
+          <span>SPRUNKI GREEN</span>
+        </div>
+        <div class="nav-links">
+          <!-- Add navigation links here -->
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Sprunki Green</h1>
+        <p class="hero-subtitle">
+          <span class="highlight">Sprunki Green</span> is one of the most
+          captivating and dynamic characters in the popular rhythm game
+          <span class="highlight">Sprunki Challenge</span>.
+        </p>
+        <div class="hero-description">
+          <div class="features">
+            <h2>Why Choose Sprunki Games?</h2>
+            <ul>
+              <li>
+                <strong>Unblocked Access:</strong> Play anywhere, anytime
+                without restrictions
+              </li>
+              <li>
+                <strong>No Downloads:</strong> All games run directly in your
+                browser
+              </li>
+              <li>
+                <strong>Regular Updates:</strong> New games added frequently
+              </li>
+              <li>
+                <strong>Free Forever:</strong> No hidden costs or subscriptions
+                needed
+              </li>
+            </ul>
+          </div>
+          <div style="display: flex; justify-content: center; margin: 2rem 0">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/ezdLTJOTwY0?si=Lk0wjEVBlJmZ41ve"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="cta-section">
+            <p>
+              Let <strong>Sprunki Green</strong> guide you through an exciting
+              musical adventure in <strong>Sprunki Challenge</strong>. Every
+              session becomes unique with this special companion, making your
+              rhythm journey unforgettable!
+            </p>
+            <div class="keywords-section">
+              <span class="keyword-tag">Sprunki Green</span>
+              <span class="keyword-tag">Sprunki Challenge</span>
+              <span class="keyword-tag">Sprunki Games</span>
+              <a href="/games/sprunki/index.html" class="keyword-tag"
+                >Sprunki</a
+              >
+            </div>
+            <a href="#games" class="play-btn">Play Games</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="games" class="games-section">
+      <h2 class="section-title">Popular Games</h2>
+      <div class="games-grid">
+        <!-- Game Card 1 -->
+        <div class="game-card">
+          <img
+            src="/games/sprunki/logo.png"
+            alt="Cyber Strike"
+            class="game-image"
+          />
+          <div class="game-info">
+            <h3 class="game-title">Sprunki</h3>
+            <p class="game-desc">
+              Sprunki Challenge, Sprunki Green, Sprunki Games, Sprunki
+            </p>
+            <a href="/games/sprunki/index.html" class="play-btn">Play Now</a>
+          </div>
+        </div>
+
+        <!-- Game Card 2 -->
+        <div class="game-card">
+          <img
+            src="/games/sprunki-challenge/logo.png"
+            alt="Sprunki Challenge"
+            class="game-image"
+          />
+          <div class="game-info">
+            <h3 class="game-title">Sprunki Challenge</h3>
+            <p class="game-desc">
+              Sprunki Challenge, Sprunki Green, Sprunki Games, Sprunki
+            </p>
+            <a href="/games/sprunki-challenge/index.html" class="play-btn"
+              >Play Now</a
+            >
+          </div>
+        </div>
+
+        <!-- Game Card 3 -->
+        <div class="game-card">
+          <img
+            src="/games/friday-night-sprunki/logo.png"
+            alt="Friday Night Sprunki"
+            class="game-image"
+          />
+          <div class="game-info">
+            <h3 class="game-title">Friday Night Sprunki</h3>
+            <p class="game-desc">
+              Friday Night Sprunki, Sprunki Green, Sprunki Games, Sprunki
+            </p>
+            <a href="/games/friday-night-sprunki/index.html" class="play-btn"
+              >Play Now</a
+            >
+          </div>
+        </div>
+
+        <!-- Game Card 4 -->
+        <div class="game-card">
+          <img
+            src="/games/sprunki-find-the-differences/logo.png"
+            alt="Sprunki Find The Differences"
+            class="game-image"
+          />
+          <div class="game-info">
+            <h3 class="game-title">Sprunki Find The Differences</h3>
+            <p class="game-desc">
+              Sprunki Find The Differences, Sprunki Green, Sprunki Games,
+              Sprunki
+            </p>
+            <a
+              href="/games/sprunki-find-the-differences/index.html"
+              class="play-btn"
+              >Play Now</a
+            >
+          </div>
+        </div>
+
+        <!-- Game Card 5 -->
+        <div class="game-card">
+          <img
+            src="/games/sprunki-popit/logo.png"
+            alt="Sprunki Popit"
+            class="game-image"
+          />
+          <div class="game-info">
+            <h3 class="game-title">Sprunki Popit</h3>
+            <p class="game-desc">
+              Sprunki Popit, Sprunki Green, Sprunki Games, Sprunki
+            </p>
+            <a href="/games/sprunki-popit/index.html" class="play-btn"
+              >Play Now</a
+            >
+          </div>
+        </div>
+        <!-- Game Card 6 -->
+        <div class="game-card">
+          <img
+            src="/games/super-sprunki-clicker/logo.png"
+            alt="Super Sprunki Clicker"
+            class="game-image"
+          />
+          <div class="game-info">
+            <h3 class="game-title">Super Sprunki Clicker</h3>
+            <p class="game-desc">
+              Super Sprunki Clicker, Sprunki Green, Sprunki Games, Sprunki
+            </p>
+            <a href="/games/super-sprunki-clicker/index.html" class="play-btn"
+              >Play Now</a
+            >
+          </div>
+        </div>
+        <!-- Game Card 7 -->
+        <div class="game-card">
+          <img
+            src="/games/friday-night-funki-big-brother/logo.png"
+            alt="Friday Night Funky Big Brother"
+            class="game-image"
+          />
+          <div class="game-info">
+            <h3 class="game-title">Friday Night Funky Big Brother</h3>
+            <p class="game-desc">Friday Night Funky Big Brother</p>
+            <a
+              href="/games/friday-night-funki-big-brother/index.html"
+              class="play-btn"
+              >Play Now</a
+            >
+          </div>
+        </div>
+        <!-- Game Card 8 -->
+        <div class="game-card">
+          <img
+            src="/games/friday-night-funkin-first-date/logo.png"
+            alt="Friday Night Funkin First Date"
+            class="game-image"
+          />
+          <div class="game-info">
+            <h3 class="game-title">Friday Night Funkin First Date</h3>
+            <p class="game-desc">Friday Night Funkin First Date</p>
+            <a
+              href="/games/friday-night-funkin-first-date/index.html"
+              class="play-btn"
+              >Play Now</a
+            >
+          </div>
+        </div>
+        <!-- Game Card 9 -->
+        <div class="game-card">
+          <img
+            src="/games/friday-night-funkin-hugie-wugie/logo.png"
+            alt="Friday Night Funkin Hugie Wugie"
+            class="game-image"
+          />
+          <div class="game-info">
+            <h3 class="game-title">Friday Night Funkin Hugie Wugie</h3>
+            <p class="game-desc">Friday Night Funkin Hugie Wugie</p>
+            <a
+              href="/games/friday-night-funkin-hugie-wugie/index.html"
+              class="play-btn"
+              >Play Now</a
+            >
+          </div>
+        </div>
+        <!-- Game Card 10 -->
+        <div class="game-card">
+          <img
+            src="/games/friday-night-funkin-noob/logo.png"
+            alt="Friday Night Funkin Noob"
+            class="game-image"
+          />
+          <div class="game-info">
+            <h3 class="game-title">Friday Night Funkin Noob</h3>
+            <p class="game-desc">Friday Night Funkin Noob</p>
+            <a
+              href="/games/friday-night-funkin-noob/index.html"
+              class="play-btn"
+              >Play Now</a
+            >
+          </div>
+        </div>
+        <!-- Game Card 11 -->
+        <div class="game-card">
+          <img
+            src="/games/super-friday-night-funki-at-freddys-2/logo.png"
+            alt="Super Friday Night Funky At Freddys 2"
+            class="game-image"
+          />
+          <div class="game-info">
+            <h3 class="game-title">Super Friday Night Funky At Freddys 2</h3>
+            <p class="game-desc">Super Friday Night Funky At Freddys 2</p>
+            <a
+              href="/games/super-friday-night-funki-at-freddys-2/index.html"
+              class="play-btn"
+              >Play Now</a
+            >
+          </div>
+        </div>
+        <!-- Game Card 12 -->
+        <div class="game-card">
+          <img
+            src="/games/super-friday-night-vs-beast-guy/logo.png"
+            alt="Super Friday Night Vs Beast Guy"
+            class="game-image"
+          />
+          <div class="game-info">
+            <h3 class="game-title">Super Friday Night Vs Beast Guy</h3>
+            <p class="game-desc">Super Friday Night Vs Beast Guy</p>
+            <a
+              href="/games/super-friday-night-vs-beast-guy/index.html"
+              class="play-btn"
+              >Play Now</a
+            >
+          </div>
+        </div>
+        <!-- Game Card 13 -->
+        <div class="game-card">
+          <img
+            src="/games/super-friday-night-vs-neon/logo.png"
+            alt="Super Friday Night Vs Neon"
+            class="game-image"
+          />
+          <div class="game-info">
+            <h3 class="game-title">Super Friday Night Vs Neon</h3>
+            <p class="game-desc">Super Friday Night Vs Neon</p>
+            <a
+              href="/games/super-friday-night-vs-neon/index.html"
+              class="play-btn"
+              >Play Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Smooth scrolling
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Animation on scroll
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("fade-in");
+          }
+        });
+      });
+
+      document.querySelectorAll(".game-card").forEach((card) => {
+        observer.observe(card);
+      });
+    </script>
+  </body>
+</html>
