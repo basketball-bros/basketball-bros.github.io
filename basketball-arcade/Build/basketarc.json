@@ -1,0 +1,12 @@
+{
+"companyName": "comp",
+"productName": "Basketball Arcade",
+"dataUrl": "basketarc.data.unityweb",
+"wasmCodeUrl": "basketarc.wasm.code.unityweb",
+"wasmFrameworkUrl": "basketarc.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#808080"
+}

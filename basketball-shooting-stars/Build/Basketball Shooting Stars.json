@@ -1,0 +1,16 @@
+{
+"companyName": "Funny Games",
+"productName": "Basketball Shooting Stars",
+"productVersion": "0.1",
+"dataUrl": "Basketball Shooting Stars.data.unityweb",
+"wasmCodeUrl": "Basketball Shooting Stars.wasm.code.unityweb",
+"wasmFrameworkUrl": "Basketball Shooting Stars.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.2.9f1"
+}
