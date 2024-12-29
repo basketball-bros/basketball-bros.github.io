@@ -1,217 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Privacy Policy | Head Soccer</title>
+    <meta charset="utf-8" />
+    <title>Privacy Policy | Basketball Bros</title>
     <meta
       name="description"
-      content="Privacy Policy of Head Soccer - Learn about our data collection, usage, and protection policies."
+      content="Privacy Policy for Basketball Bros - How we collect, use and protect your information"
     />
-    <link rel="icon" type="image/png" href="/RC.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="/B.png" />
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+      :root {
+        --neon-primary: #ff8a00; /* Orange */
+        --neon-secondary: #0066ff; /* Blue */
+        --dark-bg: #0a0a0a;
+        --card-bg: #151515;
+        --gradient: linear-gradient(
+          45deg,
+          var(--neon-primary),
+          var(--neon-secondary)
+        );
       }
 
       body {
+        margin: 0;
+        padding: 0;
         font-family: "Arial", sans-serif;
-        background: linear-gradient(135deg, #1a1a2e, #16213e);
-        color: #e1e1e1;
+        background: var(--dark-bg);
+        color: #fff;
         line-height: 1.6;
       }
 
       .container {
-        max-width: 1200px;
+        max-width: 800px;
         margin: 0 auto;
         padding: 20px;
+        position: relative;
       }
 
-      header {
+      h1 {
+        color: #fff;
         text-align: center;
-        padding: 40px 0;
-        background: rgba(255, 255, 255, 0.05);
-        border-radius: 15px;
-        margin-bottom: 30px;
-      }
-
-      header h1 {
         font-size: 2.5em;
-        color: #ff4d4d;
-        margin-bottom: 10px;
-      }
-
-      .privacy-content {
-        background: rgba(255, 255, 255, 0.05);
-        border-radius: 15px;
-        padding: 30px;
-      }
-
-      .section {
-        margin-bottom: 30px;
-      }
-
-      .section:last-child {
-        margin-bottom: 0;
+        margin-bottom: 40px;
+        background: var(--gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-bottom: 10px;
       }
 
       h2 {
-        color: #ff6b6b;
-        font-size: 1.8em;
+        color: var(--neon-primary);
+        margin-top: 30px;
+        font-size: 1.5em;
+        border-left: 4px solid var(--neon-secondary);
+        padding-left: 15px;
+      }
+
+      .privacy-section {
+        background: var(--card-bg);
+        padding: 40px;
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        margin-bottom: 30px;
+        color: #ccc;
+      }
+
+      .privacy-section ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .privacy-section ul li {
         margin-bottom: 15px;
-        padding-bottom: 10px;
-        border-bottom: 2px solid rgba(255, 77, 77, 0.3);
+        padding-left: 25px;
+        position: relative;
+        color: #ccc;
       }
 
-      p {
-        margin-bottom: 15px;
+      .privacy-section ul li:before {
+        content: "🏀";
+        position: absolute;
+        left: 0;
+        top: 2px;
       }
 
-      ul {
-        list-style-position: inside;
-        margin: 15px 0;
-        padding-left: 20px;
-      }
-
-      li {
-        margin-bottom: 10px;
-      }
-
-      a {
-        color: #ff4d4d;
-        text-decoration: none;
-        transition: color 0.3s;
-      }
-
-      a:hover {
-        color: #ff6b6b;
-      }
-
-      .highlight {
-        color: #ff4d4d;
-        font-weight: bold;
-      }
-
-      footer {
+      .footer {
         text-align: center;
         padding: 20px;
-        margin-top: 30px;
-        background: rgba(255, 255, 255, 0.05);
-        border-radius: 15px;
-      }
-
-      footer p {
-        margin: 0;
-        color: #888;
+        background: var(--gradient);
+        margin-top: 50px;
+        color: white;
+        border-radius: 10px;
       }
 
       @media (max-width: 768px) {
-        .container {
-          padding: 15px;
-        }
-
-        header {
-          padding: 30px 0;
-        }
-
-        header h1 {
-          font-size: 2em;
-        }
-
-        .privacy-content {
+        .privacy-section {
           padding: 20px;
         }
 
-        h2 {
-          font-size: 1.5em;
+        h1 {
+          font-size: 2em;
         }
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <header>
+      <div class="privacy-section">
         <h1>Privacy Policy</h1>
-        <p>Last updated: 12/22/2024</p>
-      </header>
 
-      <div class="privacy-content">
-        <div class="section">
-          <h2>Introduction</h2>
-          <p>
-            At <span class="highlight">Head Soccer</span>, accessible from
-            <a href="/">rocket-soccer.github.io</a>, we prioritize the privacy
-            of our visitors. This Privacy Policy document outlines the types of
-            information we collect and record, and how we use it.
-          </p>
-        </div>
+        <p>Last updated: March 2024</p>
 
-        <div class="section">
-          <h2>Information We Collect</h2>
-          <ul>
-            <li>Game progress and preferences</li>
-            <li>Device information and browser type</li>
-            <li>Gameplay statistics and scores</li>
-            <li>User-provided information (when applicable)</li>
-          </ul>
-        </div>
+        <h2>Overview</h2>
+        <p>
+          This Privacy Notice explains how we handle your personal information
+          when you visit our website. We are committed to protecting your
+          privacy and ensuring your data is handled securely and responsibly.
+        </p>
 
-        <div class="section">
-          <h2>How We Use Your Data</h2>
-          <ul>
-            <li>To improve game performance and user experience</li>
-            <li>To save your game progress and preferences</li>
-            <li>To maintain leaderboards and achievements</li>
-            <li>To provide technical support when needed</li>
-          </ul>
-        </div>
+        <h2>Data Collection</h2>
+        <p>During your visit to our website, we collect:</p>
+        <ul>
+          <li>Technical data (browser type, device information)</li>
+          <li>Usage information (pages viewed, interaction data)</li>
+          <li>Cookie data and similar technologies</li>
+          <li>IP address and location data</li>
+        </ul>
 
-        <div class="section">
-          <h2>Data Protection</h2>
-          <p>
-            We implement security measures to protect your data against
-            unauthorized access, alteration, disclosure, or destruction. Your
-            data is stored securely and accessed only when necessary.
-          </p>
-        </div>
+        <h2>How We Use Your Data</h2>
+        <p>Your information helps us to:</p>
+        <ul>
+          <li>Enhance website performance and security</li>
+          <li>Deliver personalized content</li>
+          <li>Analyze user behavior and preferences</li>
+          <li>Improve our services</li>
+        </ul>
 
-        <div class="section">
-          <h2>Cookies Policy</h2>
-          <p>
-            We use cookies to enhance your gaming experience. These cookies
-            store your preferences and game progress. You can choose to disable
-            cookies in your browser, but this may affect some game features.
-          </p>
-        </div>
+        <h2>Cookie Usage</h2>
+        <p>
+          Our website uses cookies and similar tracking technologies to improve
+          your browsing experience. You can manage cookie preferences through
+          your browser settings, though this may affect certain website
+          features.
+        </p>
 
-        <div class="section">
-          <h2>Children's Privacy</h2>
-          <p>
-            We do not knowingly collect personal information from children under
-            13. If you believe your child has provided us with personal
-            information, please contact us, and we will promptly remove such
-            information.
-          </p>
-        </div>
+        <h2>Data Protection</h2>
+        <p>
+          We implement various security measures to protect your data,
+          including:
+        </p>
+        <ul>
+          <li>Secure data encryption</li>
+          <li>Regular security assessments</li>
+          <li>Access controls and monitoring</li>
+          <li>Secure data storage systems</li>
+        </ul>
 
-        <div class="section">
-          <h2>Contact Us</h2>
-          <p>
-            If you have questions about this Privacy Policy, please contact us
-            at:
-          </p>
-          <p>
-            <a href="mailto:privacy@rocket-soccer.github.io"
-              >privacy@rocket-soccer.github.io</a
-            >
-          </p>
-        </div>
+        <h2>Your Privacy Rights</h2>
+        <p>You have the right to:</p>
+        <ul>
+          <li>Access your personal data</li>
+          <li>Request data correction or deletion</li>
+          <li>Opt-out of data collection</li>
+          <li>Withdraw consent at any time</li>
+        </ul>
+
+        <h2>Contact Information</h2>
+        <p>
+          For privacy-related inquiries or concerns, please contact our privacy
+          team at: privacy@website.com
+        </p>
       </div>
 
-      <footer>
-        <p>&copy; 2024 Head Soccer. All rights reserved.</p>
+      <footer class="footer">
+        <p>© 2024 Basketball Bros. All Rights Reserved.</p>
       </footer>
     </div>
   </body>

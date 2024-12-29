@@ -9,13 +9,13 @@
       content="Play 10+ Basketball Bros Games & More Basketball Games. Play Now !"
     />
     <link rel="icon" type="image/png" href="./B.png" />
-    <meta property="og:image" content="./Sprunki.png" />
+    <meta property="og:image" content="./basket-bros.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="1200" />
     <!-- Google tag (gtag.js) -->
     <script
       async
-      src="https://www.googletagmanager.com/gtag/js?id=G-Q29MMYXXFW"
+      src="https://www.googletagmanager.com/gtag/js?id=G-K85477H479"
     ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -24,7 +24,7 @@
       }
       gtag("js", new Date());
 
-      gtag("config", "G-Q29MMYXXFW");
+      gtag("config", "G-K85477H479");
     </script>
     <style>
       :root {
@@ -295,6 +295,55 @@
         background: var(--gradient);
         transform: translateY(-3px);
         box-shadow: 0 0 15px rgba(0, 243, 255, 0.3);
+      }
+
+      .footer {
+        background: var(--gradient);
+        padding: 40px 5%;
+        margin-top: 50px;
+        color: white;
+      }
+
+      .footer-content {
+        max-width: 1400px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .footer-links {
+        display: flex;
+        gap: 20px;
+      }
+
+      .footer-links a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 20px;
+        border-radius: 25px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      .footer-links a:hover {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: white;
+        transform: translateY(-3px);
+      }
+
+      @media (max-width: 768px) {
+        .footer-content {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .footer-links {
+          justify-content: center;
+          flex-wrap: wrap;
+        }
       }
     </style>
   </head>
@@ -613,6 +662,17 @@
         </div>
       </div>
     </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© 2025 Basketball Bros. All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="/termsofuse.html">Terms of Service</a>
+          <a href="/privacypolicy.html">Privacy Policy</a>
+          <a href="/contact.html">Contact Us</a>
+        </div>
+      </div>
+    </footer>
 
     <script>
       // Smooth scrolling
