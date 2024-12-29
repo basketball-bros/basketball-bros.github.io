@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui, minimum-scale=1">
+    <!-- <meta property="og:url" content="https://play.snapgame.io/s/facebook/?action=share&gid=uniwordsity&target=facebook" /> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="game/assets/unpacked/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="game/assets/unpacked/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="game/assets/unpacked/favicons/favicon-16x16.png" sizes="16x16">
+    <!-- <link rel="manifest" href="game/assets/unpacked/favicons/manifest.json"> -->
+    <link rel="mask-icon" href="game/assets/unpacked/favicons/safari-pinned-tab.svg" color="#ffffff">
+    <link rel="shortcut icon" href="game/assets/unpacked/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="game/assets/unpacked/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="game/assets/unpacked/favicons/browserconfig.xml">
+    <title>Basketball</title>
+    <style>
+        html, body {
+            line-height: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            position: fixed;
+            top: 0;
+            transform-origin: center center;
+            touch-action: none;
+            -ms-touch-action: none;
+        }
+
+        .bg {
+            background-image: url(game/assets/unpacked/background.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        canvas {
+            position: absolute;
+            z-index: 10;
+        }
+
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed,
+        figure, figcaption, footer, header, hgroup,
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol, ul {
+            list-style: none;
+        }
+
+        blockquote, q {
+            quotes: none;
+        }
+
+            blockquote:before, blockquote:after,
+            q:before, q:after {
+                content: '';
+                content: none;
+            }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        #placeholders {
+            display: none;
+        }
+
+        body, html {
+            max-height: 100%;
+            overflow: hidden;
+        }
+    </style>
+    
+</head>
+
+<body class="bg">
+	<script src="build/game.min.js" ></script>
+</body>
+
+</html>

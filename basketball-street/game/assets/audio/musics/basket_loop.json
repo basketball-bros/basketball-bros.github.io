@@ -1,0 +1,8 @@
+{
+  "urls": [
+  	"game/assets/audio/musics/basket_loop.ogg",
+    "game/assets/audio/musics/basket_loop.mp3"
+
+  ],
+  "autoplay": false
+}
