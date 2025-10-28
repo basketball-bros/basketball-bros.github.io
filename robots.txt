@@ -1,0 +1,15 @@
+# robots.txt for Basketball Bros
+
+User-agent: *
+Allow: /
+
+# Disallow admin or private areas if any
+Disallow: /private/
+Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://basketball-bros.github.io/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1
+
