@@ -269,11 +269,10 @@
       </div>
       
       <!-- Two Column Layout: Games and Sidebar -->
-      <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; margin-top: 2rem; max-width: 1600px; margin-left: auto; margin-right: auto;">
+      <div class="games-layout">
         
         <!-- Left Column: Games Grid -->
-        <div>
-          <h3 style="color: var(--neon-primary); font-size: 1.5rem; margin-bottom: 2rem; text-align: center;">All Basketball Bros Games</h3>
+        <div class="games-column">
           <div class="games-grid">
         <!-- Game Card 1 -->
         <div class="game-card" itemscope itemtype="https://schema.org/VideoGame">
@@ -686,55 +685,55 @@
         </div>
         
         <!-- Right Column: Sidebar Content -->
-        <div class="intro-section" style="margin: 0; position: sticky; top: 100px; align-self: start;">
-          <h3 class="intro-title" style="font-size: 1.3rem; margin-bottom: 1rem;">About Basketball Bros</h3>
-          <p class="intro-description" style="font-size: 0.9rem; margin-bottom: 1rem;">
+        <aside class="sidebar-content">
+          <h3 class="sidebar-title">About Basketball Bros</h3>
+          <p class="sidebar-text">
             <strong>Basketball Bros unblocked games</strong> offer the best free online basketball entertainment. Access 30+ exciting games without downloads.
           </p>
           
-          <h4 style="color: var(--neon-secondary); margin: 1.5rem 0 1rem; font-size: 1rem;">Game Categories</h4>
+          <h4 class="sidebar-section-title">Game Categories</h4>
           
-          <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem;">
-            <div style="background: rgba(255, 138, 0, 0.05); padding: 1rem; border-radius: 8px; border: 1px solid rgba(255, 138, 0, 0.2);">
-              <h5 style="color: var(--neon-primary); margin-bottom: 0.3rem; font-size: 0.9rem;">🏆 Competitive</h5>
-              <p style="color: #ccc; font-size: 0.8rem; line-height: 1.4;">Challenge friends in multiplayer matches.</p>
+          <div class="category-cards">
+            <div class="category-card category-orange">
+              <h5 class="category-title">🏆 Competitive</h5>
+              <p class="category-text">Challenge friends in multiplayer matches.</p>
             </div>
             
-            <div style="background: rgba(0, 102, 255, 0.05); padding: 1rem; border-radius: 8px; border: 1px solid rgba(0, 102, 255, 0.2);">
-              <h5 style="color: var(--neon-secondary); margin-bottom: 0.3rem; font-size: 0.9rem;">🎯 Arcade</h5>
-              <p style="color: #ccc; font-size: 0.8rem; line-height: 1.4;">Classic basketball arcade experiences.</p>
+            <div class="category-card category-blue">
+              <h5 class="category-title">🎯 Arcade</h5>
+              <p class="category-text">Classic basketball arcade experiences.</p>
             </div>
             
-            <div style="background: rgba(255, 138, 0, 0.05); padding: 1rem; border-radius: 8px; border: 1px solid rgba(255, 138, 0, 0.2);">
-              <h5 style="color: var(--neon-primary); margin-bottom: 0.3rem; font-size: 0.9rem;">⚽ Physics</h5>
-              <p style="color: #ccc; font-size: 0.8rem; line-height: 1.4;">Realistic physics-based challenges.</p>
+            <div class="category-card category-orange">
+              <h5 class="category-title">⚽ Physics</h5>
+              <p class="category-text">Realistic physics-based challenges.</p>
             </div>
             
-            <div style="background: rgba(0, 102, 255, 0.05); padding: 1rem; border-radius: 8px; border: 1px solid rgba(0, 102, 255, 0.2);">
-              <h5 style="color: var(--neon-secondary); margin-bottom: 0.3rem; font-size: 0.9rem;">🎮 IO Games</h5>
-              <p style="color: #ccc; font-size: 0.8rem; line-height: 1.4;">Compete with players worldwide.</p>
+            <div class="category-card category-blue">
+              <h5 class="category-title">🎮 IO Games</h5>
+              <p class="category-text">Compete with players worldwide.</p>
             </div>
           </div>
           
-          <h4 style="color: var(--neon-secondary); margin: 2rem 0 1rem; font-size: 1rem;">Quick FAQs</h4>
+          <h4 class="sidebar-section-title">Quick FAQs</h4>
           
-          <div style="margin-top: 1rem;">
-            <div style="margin-bottom: 1.2rem;">
-              <h5 style="color: var(--neon-primary); margin-bottom: 0.3rem; font-size: 0.85rem;">Unblocked?</h5>
-              <p style="color: #ccc; font-size: 0.75rem; line-height: 1.4;">Yes! All Basketball Bros games work anywhere - school, work, or home.</p>
+          <div class="faq-items">
+            <div class="faq-item">
+              <h5 class="faq-question">Unblocked?</h5>
+              <p class="faq-answer">Yes! All Basketball Bros games work anywhere - school, work, or home.</p>
             </div>
             
-            <div style="margin-bottom: 1.2rem;">
-              <h5 style="color: var(--neon-primary); margin-bottom: 0.3rem; font-size: 0.85rem;">Account needed?</h5>
-              <p style="color: #ccc; font-size: 0.75rem; line-height: 1.4;">No registration required - play instantly!</p>
+            <div class="faq-item">
+              <h5 class="faq-question">Account needed?</h5>
+              <p class="faq-answer">No registration required - play instantly!</p>
             </div>
             
-            <div style="margin-bottom: 1.2rem;">
-              <h5 style="color: var(--neon-primary); margin-bottom: 0.3rem; font-size: 0.85rem;">Safe to play?</h5>
-              <p style="color: #ccc; font-size: 0.75rem; line-height: 1.4;">100% safe! No data collection, secure browser only.</p>
+            <div class="faq-item">
+              <h5 class="faq-question">Safe to play?</h5>
+              <p class="faq-answer">100% safe! No data collection, secure browser only.</p>
             </div>
           </div>
-        </div>
+        </aside>
         
       </div>
     </section>
