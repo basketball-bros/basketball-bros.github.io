@@ -59,6 +59,21 @@ function closeGameModal(event) {
   const modal = document.getElementById('gameModal');
   const modalIframe = document.getElementById('gameModalIframe');
   
+  // First exit fullscreen if active
+  if (modal.classList.contains('fullscreen')) {
+    modal.classList.remove('fullscreen');
+    // Try to exit browser fullscreen if available
+    if (document.exitFullscreen) {
+      document.exitFullscreen().catch(err => console.log(err));
+    } else if (document.webkitExitFullscreen) {
+      document.webkitExitFullscreen();
+    } else if (document.mozCancelFullScreen) {
+      document.mozCancelFullScreen();
+    } else if (document.msExitFullscreen) {
+      document.msExitFullscreen();
+    }
+  }
+  
   modal.classList.remove('active');
   document.body.style.overflow = 'auto';
   
