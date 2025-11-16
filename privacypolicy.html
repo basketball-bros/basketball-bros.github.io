@@ -1,181 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Primary Meta Tags -->
     <title>Privacy Policy | Basketball Bros</title>
-    <meta
-      name="description"
-      content="Privacy Policy for Basketball Bros - How we collect, use and protect your information"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="/B.png" />
+    <meta name="title" content="Privacy Policy | Basketball Bros" />
+    <meta name="description" content="Privacy Policy for Basketball Bros - How we collect, use and protect your information" />
+    <meta name="keywords" content="basketball bros, privacy policy, privacy, data protection, basketball games" />
+    <meta name="author" content="Basketball Bros" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./B.png" />
+    
+    <!-- Critical CSS Inline -->
     <style>
+      /* Critical above-the-fold styles */
       :root {
-        --neon-primary: #ff8a00; /* Orange */
-        --neon-secondary: #0066ff; /* Blue */
+        --neon-primary: #ff8a00;
+        --neon-secondary: #0066ff;
         --dark-bg: #0a0a0a;
         --card-bg: #151515;
-        --gradient: linear-gradient(
-          45deg,
-          var(--neon-primary),
-          var(--neon-secondary)
-        );
+        --gradient: linear-gradient(45deg, var(--neon-primary), var(--neon-secondary));
       }
-
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: "Arial", sans-serif;
-        background: var(--dark-bg);
-        color: #fff;
-        line-height: 1.6;
-      }
-
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        position: relative;
-      }
-
-      h1 {
-        color: #fff;
-        text-align: center;
-        font-size: 2.5em;
-        margin-bottom: 40px;
-        background: var(--gradient);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        padding-bottom: 10px;
-      }
-
-      h2 {
-        color: var(--neon-primary);
-        margin-top: 30px;
-        font-size: 1.5em;
-        border-left: 4px solid var(--neon-secondary);
-        padding-left: 15px;
-      }
-
-      .privacy-section {
-        background: var(--card-bg);
-        padding: 40px;
-        border-radius: 20px;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        margin-bottom: 30px;
-        color: #ccc;
-      }
-
-      .privacy-section ul {
-        list-style: none;
-        padding-left: 0;
-      }
-
-      .privacy-section ul li {
-        margin-bottom: 15px;
-        padding-left: 25px;
-        position: relative;
-        color: #ccc;
-      }
-
-      .privacy-section ul li:before {
-        content: "🏀";
-        position: absolute;
-        left: 0;
-        top: 2px;
-      }
-
-      .footer {
-        text-align: center;
-        padding: 20px;
-        background: var(--gradient);
-        margin-top: 50px;
-        color: white;
-        border-radius: 10px;
-      }
-
+      * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif; }
+      body { background: var(--dark-bg); color: #fff; overflow-x: hidden; }
+      .navbar { background: rgba(0, 0, 0, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid var(--neon-primary); position: fixed; width: 100%; z-index: 1000; padding: 1rem 5%; }
+      .nav-content { display: flex; justify-content: space-between; align-items: center; max-width: 1400px; margin: 0 auto; }
+      .logo a { text-decoration: none; background: var(--gradient); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; font-size: 2rem; font-weight: 700; }
       @media (max-width: 768px) {
-        .privacy-section {
-          padding: 20px;
-        }
-
-        h1 {
-          font-size: 2em;
-        }
+        .logo a { font-size: 1.5rem; }
       }
     </style>
+    
+    <!-- External CSS - Async loading for better performance -->
+    <link rel="preload" href="/css/styles.css" as="style">
+    <link rel="stylesheet" href="/css/styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/css/styles.css"></noscript>
+    
+    <!-- Google Analytics - Deferred loading for better performance -->
+    <script src="/js/analytics.js" defer></script>
   </head>
   <body>
-    <div class="container">
-      <div class="privacy-section">
-        <h1>Privacy Policy</h1>
-
-        <p>Last updated: March 2024</p>
-
-        <h2>Overview</h2>
-        <p>
-          This Privacy Notice explains how we handle your personal information
-          when you visit our website. We are committed to protecting your
-          privacy and ensuring your data is handled securely and responsibly.
-        </p>
-
-        <h2>Data Collection</h2>
-        <p>During your visit to our website, we collect:</p>
-        <ul>
-          <li>Technical data (browser type, device information)</li>
-          <li>Usage information (pages viewed, interaction data)</li>
-          <li>Cookie data and similar technologies</li>
-          <li>IP address and location data</li>
-        </ul>
-
-        <h2>How We Use Your Data</h2>
-        <p>Your information helps us to:</p>
-        <ul>
-          <li>Enhance website performance and security</li>
-          <li>Deliver personalized content</li>
-          <li>Analyze user behavior and preferences</li>
-          <li>Improve our services</li>
-        </ul>
-
-        <h2>Cookie Usage</h2>
-        <p>
-          Our website uses cookies and similar tracking technologies to improve
-          your browsing experience. You can manage cookie preferences through
-          your browser settings, though this may affect certain website
-          features.
-        </p>
-
-        <h2>Data Protection</h2>
-        <p>
-          We implement various security measures to protect your data,
-          including:
-        </p>
-        <ul>
-          <li>Secure data encryption</li>
-          <li>Regular security assessments</li>
-          <li>Access controls and monitoring</li>
-          <li>Secure data storage systems</li>
-        </ul>
-
-        <h2>Your Privacy Rights</h2>
-        <p>You have the right to:</p>
-        <ul>
-          <li>Access your personal data</li>
-          <li>Request data correction or deletion</li>
-          <li>Opt-out of data collection</li>
-          <li>Withdraw consent at any time</li>
-        </ul>
-
-        <h2>Contact Information</h2>
-        <p>
-          For privacy-related inquiries or concerns, please contact our privacy
-          team at: privacy@website.com
-        </p>
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="logo">
+          <a href="/index.html">BASKETBALL BROS</a>
+        </div>
+        <div class="nav-links">
+          <!-- Add navigation links here -->
+        </div>
       </div>
+    </nav>
 
-      <footer class="footer">
-        <p>© 2024 Basketball Bros. All Rights Reserved.</p>
-      </footer>
-    </div>
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="breadcrumb" class="breadcrumb-nav">
+      <div class="breadcrumb-container">
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li>›</li>
+          <li>Privacy Policy</li>
+        </ol>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container" style="max-width: 800px; margin: 100px auto 40px; padding: 20px;">
+        <div class="privacy-section" style="background: var(--card-bg); padding: 40px; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.1); margin-bottom: 30px; color: #ccc;">
+          <h1 style="color: #fff; text-align: center; font-size: 2.5em; margin-bottom: 40px; background: var(--gradient); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; padding-bottom: 10px;">Privacy Policy</h1>
+
+          <p>Last updated: March 2024</p>
+
+          <h2 style="color: var(--neon-primary); margin-top: 30px; font-size: 1.5em; border-left: 4px solid var(--neon-secondary); padding-left: 15px;">Overview</h2>
+          <p>
+            This Privacy Notice explains how we handle your personal information
+            when you visit our website. We are committed to protecting your
+            privacy and ensuring your data is handled securely and responsibly.
+          </p>
+
+          <h2 style="color: var(--neon-primary); margin-top: 30px; font-size: 1.5em; border-left: 4px solid var(--neon-secondary); padding-left: 15px;">Data Collection</h2>
+          <p>During your visit to our website, we collect:</p>
+          <ul style="list-style: none; padding-left: 0;">
+            <li style="margin-bottom: 15px; padding-left: 25px; position: relative; color: #ccc;">
+              <span style="position: absolute; left: 0; top: 2px;">🏀</span>
+              Technical data (browser type, device information)
+            </li>
+            <li style="margin-bottom: 15px; padding-left: 25px; position: relative; color: #ccc;">
+              <span style="position: absolute; left: 0; top: 2px;">🏀</span>
+              Usage information (pages viewed, interaction data)
+            </li>
+            <li style="margin-bottom: 15px; padding-left: 25px; position: relative; color: #ccc;">
+              <span style="position: absolute; left: 0; top: 2px;">🏀</span>
+              Cookie data and similar technologies
+            </li>
+            <li style="margin-bottom: 15px; padding-left: 25px; position: relative; color: #ccc;">
+              <span style="position: absolute; left: 0; top: 2px;">🏀</span>
+              IP address and location data
+            </li>
+          </ul>
+
+          <h2 style="color: var(--neon-primary); margin-top: 30px; font-size: 1.5em; border-left: 4px solid var(--neon-secondary); padding-left: 15px;">How We Use Your Data</h2>
+          <p>Your information helps us to:</p>
+          <ul style="list-style: none; padding-left: 0;">
+            <li style="margin-bottom: 15px; padding-left: 25px; position: relative; color: #ccc;">
+              <span style="position: absolute; left: 0; top: 2px;">🏀</span>
+              Enhance website performance and security
+            </li>
+            <li style="margin-bottom: 15px; padding-left: 25px; position: relative; color: #ccc;">
+              <span style="position: absolute; left: 0; top: 2px;">🏀</span>
+              Deliver personalized content
+            </li>
+            <li style="margin-bottom: 15px; padding-left: 25px; position: relative; color: #ccc;">
+              <span style="position: absolute; left: 0; top: 2px;">🏀</span>
+              Analyze user behavior and preferences
+            </li>
+            <li style="margin-bottom: 15px; padding-left: 25px; position: relative; color: #ccc;">
+              <span style="position: absolute; left: 0; top: 2px;">🏀</span>
+              Improve our services
+            </li>
+          </ul>
+
+          <h2 style="color: var(--neon-primary); margin-top: 30px; font-size: 1.5em; border-left: 4px solid var(--neon-secondary); padding-left: 15px;">Cookie Usage</h2>
+          <p>
+            Our website uses cookies and similar tracking technologies to improve
+            your browsing experience. You can manage cookie preferences through
+            your browser settings, though this may affect certain website
+            features.
+          </p>
+
+          <h2 style="color: var(--neon-primary); margin-top: 30px; font-size: 1.5em; border-left: 4px solid var(--neon-secondary); padding-left: 15px;">Data Protection</h2>
+          <p>
+            We implement various security measures to protect your data,
+            including:
+          </p>
+          <ul style="list-style: none; padding-left: 0;">
+            <li style="margin-bottom: 15px; padding-left: 25px; position: relative; color: #ccc;">
+              <span style="position: absolute; left: 0; top: 2px;">🏀</span>
+              Secure data encryption
+            </li>
+            <li style="margin-bottom: 15px; padding-left: 25px; position: relative; color: #ccc;">
+              <span style="position: absolute; left: 0; top: 2px;">🏀</span>
+              Regular security assessments
+            </li>
+            <li style="margin-bottom: 15px; padding-left: 25px; position: relative; color: #ccc;">
+              <span style="position: absolute; left: 0; top: 2px;">🏀</span>
+              Access controls and monitoring
+            </li>
+            <li style="margin-bottom: 15px; padding-left: 25px; position: relative; color: #ccc;">
+              <span style="position: absolute; left: 0; top: 2px;">🏀</span>
+              Secure data storage systems
+            </li>
+          </ul>
+
+          <h2 style="color: var(--neon-primary); margin-top: 30px; font-size: 1.5em; border-left: 4px solid var(--neon-secondary); padding-left: 15px;">Your Privacy Rights</h2>
+          <p>You have the right to:</p>
+          <ul style="list-style: none; padding-left: 0;">
+            <li style="margin-bottom: 15px; padding-left: 25px; position: relative; color: #ccc;">
+              <span style="position: absolute; left: 0; top: 2px;">🏀</span>
+              Access your personal data
+            </li>
+            <li style="margin-bottom: 15px; padding-left: 25px; position: relative; color: #ccc;">
+              <span style="position: absolute; left: 0; top: 2px;">🏀</span>
+              Request data correction or deletion
+            </li>
+            <li style="margin-bottom: 15px; padding-left: 25px; position: relative; color: #ccc;">
+              <span style="position: absolute; left: 0; top: 2px;">🏀</span>
+              Opt-out of data collection
+            </li>
+            <li style="margin-bottom: 15px; padding-left: 25px; position: relative; color: #ccc;">
+              <span style="position: absolute; left: 0; top: 2px;">🏀</span>
+              Withdraw consent at any time
+            </li>
+          </ul>
+
+          <h2 style="color: var(--neon-primary); margin-top: 30px; font-size: 1.5em; border-left: 4px solid var(--neon-secondary); padding-left: 15px;">Contact Information</h2>
+          <p>
+            For privacy-related inquiries or concerns, please contact our privacy
+            team at: privacy@website.com
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© 2025 Basketball Bros. All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="/termsofuse.html">Terms of Service</a>
+          <a href="/privacypolicy.html">Privacy Policy</a>
+          <a href="/contact.html">Contact Us</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="/js/main.js"></script>
   </body>
 </html>

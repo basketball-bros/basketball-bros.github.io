@@ -2,295 +2,167 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/B.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Primary Meta Tags -->
     <title>Terms of Use | Basketball Bros</title>
+    <meta name="title" content="Terms of Use | Basketball Bros" />
+    <meta name="description" content="Terms of Use for Basketball Bros - Please read these terms carefully before using Basketball Bros." />
+    <meta name="keywords" content="basketball bros, terms of use, terms of service, basketball games" />
+    <meta name="author" content="Basketball Bros" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./B.png" />
+    
+    <!-- Critical CSS Inline -->
     <style>
+      /* Critical above-the-fold styles */
       :root {
         --neon-primary: #ff8a00;
         --neon-secondary: #0066ff;
         --dark-bg: #0a0a0a;
         --card-bg: #151515;
-        --gradient: linear-gradient(
-          45deg,
-          var(--neon-primary),
-          var(--neon-secondary)
-        );
+        --gradient: linear-gradient(45deg, var(--neon-primary), var(--neon-secondary));
       }
-
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Arial", sans-serif;
-      }
-
-      body {
-        background: var(--dark-bg);
-        color: #fff;
-        line-height: 1.6;
-      }
-
-      .navbar {
-        background: rgba(0, 0, 0, 0.95);
-        backdrop-filter: blur(10px);
-        border-bottom: 1px solid var(--neon-primary);
-        position: fixed;
-        width: 100%;
-        z-index: 1000;
-        padding: 1rem 5%;
-      }
-
-      .nav-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 1400px;
-        margin: 0 auto;
-      }
-
-      .logo {
-        font-size: 2rem;
-        font-weight: 700;
-        background: var(--gradient);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-
-      .terms-container {
-        max-width: 800px;
-        margin: 100px auto 40px;
-        padding: 20px;
-      }
-
-      .terms-header {
-        text-align: center;
-        margin-bottom: 40px;
-        padding: 40px;
-        background: var(--card-bg);
-        border-radius: 20px;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-      }
-
-      .terms-header h1 {
-        font-size: 3rem;
-        margin-bottom: 20px;
-        background: var(--gradient);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-
-      .terms-header p {
-        color: #ccc;
-      }
-
-      .terms-section {
-        background: var(--card-bg);
-        padding: 30px;
-        margin-bottom: 20px;
-        border-radius: 15px;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        transition: transform 0.3s ease;
-      }
-
-      .terms-section:hover {
-        transform: translateY(-5px);
-      }
-
-      .terms-section h2 {
-        color: var(--neon-primary);
-        margin-bottom: 20px;
-        font-size: 1.8rem;
-        border-bottom: 2px solid var(--neon-secondary);
-        padding-bottom: 10px;
-      }
-
-      .terms-section p {
-        margin-bottom: 15px;
-        color: #ccc;
-      }
-
-      .terms-section ul {
-        list-style: none;
-        margin: 20px 0;
-      }
-
-      .terms-section ul li {
-        margin-bottom: 10px;
-        padding-left: 25px;
-        position: relative;
-        color: #ccc;
-      }
-
-      .terms-section ul li::before {
-        content: "🏀";
-        position: absolute;
-        left: 0;
-        top: 2px;
-      }
-
-      .highlight-box {
-        background: rgba(255, 138, 0, 0.1);
-        border-left: 4px solid var(--neon-primary);
-        padding: 20px;
-        margin: 20px 0;
-        border-radius: 0 10px 10px 0;
-      }
-
-      .contact-link {
-        color: var(--neon-primary);
-        text-decoration: none;
-        transition: color 0.3s ease;
-      }
-
-      .contact-link:hover {
-        color: var(--neon-secondary);
-      }
-
-      .footer {
-        background: var(--gradient);
-        padding: 40px 5%;
-        margin-top: 50px;
-        color: white;
-      }
-
-      .footer-content {
-        max-width: 1400px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 20px;
-      }
-
-      .footer-links {
-        display: flex;
-        gap: 20px;
-      }
-
-      .footer-links a {
-        color: white;
-        text-decoration: none;
-        padding: 8px 20px;
-        border-radius: 25px;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        transition: all 0.3s ease;
-      }
-
-      .footer-links a:hover {
-        background: rgba(255, 255, 255, 0.1);
-        border-color: white;
-        transform: translateY(-3px);
-      }
-
+      * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif; }
+      body { background: var(--dark-bg); color: #fff; overflow-x: hidden; }
+      .navbar { background: rgba(0, 0, 0, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid var(--neon-primary); position: fixed; width: 100%; z-index: 1000; padding: 1rem 5%; }
+      .nav-content { display: flex; justify-content: space-between; align-items: center; max-width: 1400px; margin: 0 auto; }
+      .logo a { text-decoration: none; background: var(--gradient); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; font-size: 2rem; font-weight: 700; }
       @media (max-width: 768px) {
-        .terms-container {
-          padding: 15px;
-        }
-
-        .terms-header h1 {
-          font-size: 2rem;
-        }
-
-        .terms-section {
-          padding: 20px;
-        }
-
-        .footer-content {
-          flex-direction: column;
-          text-align: center;
-        }
-
-        .footer-links {
-          justify-content: center;
-          flex-wrap: wrap;
-        }
+        .logo a { font-size: 1.5rem; }
       }
     </style>
+    
+    <!-- External CSS - Async loading for better performance -->
+    <link rel="preload" href="/css/styles.css" as="style">
+    <link rel="stylesheet" href="/css/styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/css/styles.css"></noscript>
+    
+    <!-- Google Analytics - Deferred loading for better performance -->
+    <script src="/js/analytics.js" defer></script>
   </head>
   <body>
-    <div class="terms-container">
-      <div class="terms-header">
-        <h1>Terms of Use</h1>
-        <p>Last updated: March 2024</p>
-        <p>Please read these terms carefully before using Basketball Bros.</p>
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="logo">
+          <a href="/index.html">BASKETBALL BROS</a>
+        </div>
+        <div class="nav-links">
+          <!-- Add navigation links here -->
+        </div>
       </div>
+    </nav>
 
-      <div class="terms-section">
-        <h2>1. Agreement to Terms</h2>
-        <p>
-          By accessing or using Basketball Bros, you agree to be bound by these
-          Terms of Use. If you disagree with any part of these terms, you may
-          not access or use our service.
-        </p>
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="breadcrumb" class="breadcrumb-nav">
+      <div class="breadcrumb-container">
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li>›</li>
+          <li>Terms of Use</li>
+        </ol>
       </div>
+    </nav>
 
-      <div class="terms-section">
-        <h2>2. Age Restrictions</h2>
-        <p>
-          Basketball Bros is intended for users aged 13 and above. Users under
-          13 must have parental consent.
-        </p>
-      </div>
+    <main>
+      <div class="terms-container" style="max-width: 800px; margin: 100px auto 40px; padding: 20px;">
+        <div class="terms-header" style="text-align: center; margin-bottom: 40px; padding: 40px; background: var(--card-bg); border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.1);">
+          <h1 style="font-size: 3rem; margin-bottom: 20px; background: var(--gradient); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">Terms of Use</h1>
+          <p style="color: #ccc;">Last updated: March 2024</p>
+          <p style="color: #ccc;">Please read these terms carefully before using Basketball Bros.</p>
+        </div>
 
-      <div class="terms-section">
-        <h2>3. User Rights and Responsibilities</h2>
-        <ul>
-          <li>
-            You may use Basketball Bros for personal, non-commercial
-            entertainment purposes
-          </li>
-          <li>
-            You must not modify, distribute, or create derivative works of the
-            game
-          </li>
-          <li>
-            You are responsible for maintaining the confidentiality of your
-            account
-          </li>
-          <li>
-            You must not engage in any activity that disrupts or interferes with
-            the service
-          </li>
-        </ul>
-      </div>
+        <div class="terms-section" style="background: var(--card-bg); padding: 30px; margin-bottom: 20px; border-radius: 15px; border: 1px solid rgba(255, 255, 255, 0.1); transition: transform 0.3s ease;">
+          <h2 style="color: var(--neon-primary); margin-bottom: 20px; font-size: 1.8rem; border-bottom: 2px solid var(--neon-secondary); padding-bottom: 10px;">1. Agreement to Terms</h2>
+          <p style="margin-bottom: 15px; color: #ccc;">
+            By accessing or using Basketball Bros, you agree to be bound by these
+            Terms of Use. If you disagree with any part of these terms, you may
+            not access or use our service.
+          </p>
+        </div>
 
-      <div class="terms-section">
-        <h2>4. Intellectual Property</h2>
-        <p>
-          Basketball Bros and all related content are protected by copyright and
-          other intellectual property rights.
-        </p>
-      </div>
+        <div class="terms-section" style="background: var(--card-bg); padding: 30px; margin-bottom: 20px; border-radius: 15px; border: 1px solid rgba(255, 255, 255, 0.1); transition: transform 0.3s ease;">
+          <h2 style="color: var(--neon-primary); margin-bottom: 20px; font-size: 1.8rem; border-bottom: 2px solid var(--neon-secondary); padding-bottom: 10px;">2. Age Restrictions</h2>
+          <p style="margin-bottom: 15px; color: #ccc;">
+            Basketball Bros is intended for users aged 13 and above. Users under
+            13 must have parental consent.
+          </p>
+        </div>
 
-      <div class="terms-section">
-        <h2>5. Prohibited Activities</h2>
-        <ul>
-          <li>Attempting to bypass game security measures</li>
-          <li>Using cheats, automation software, or exploits</li>
-          <li>Harassing other users or creating offensive content</li>
-          <li>Selling or transferring game accounts</li>
-        </ul>
-      </div>
+        <div class="terms-section" style="background: var(--card-bg); padding: 30px; margin-bottom: 20px; border-radius: 15px; border: 1px solid rgba(255, 255, 255, 0.1); transition: transform 0.3s ease;">
+          <h2 style="color: var(--neon-primary); margin-bottom: 20px; font-size: 1.8rem; border-bottom: 2px solid var(--neon-secondary); padding-bottom: 10px;">3. User Rights and Responsibilities</h2>
+          <ul style="list-style: none; margin: 20px 0;">
+            <li style="margin-bottom: 10px; padding-left: 25px; position: relative; color: #ccc;">
+              <span style="position: absolute; left: 0; top: 2px;">🏀</span>
+              You may use Basketball Bros for personal, non-commercial
+              entertainment purposes
+            </li>
+            <li style="margin-bottom: 10px; padding-left: 25px; position: relative; color: #ccc;">
+              <span style="position: absolute; left: 0; top: 2px;">🏀</span>
+              You must not modify, distribute, or create derivative works of the
+              game
+            </li>
+            <li style="margin-bottom: 10px; padding-left: 25px; position: relative; color: #ccc;">
+              <span style="position: absolute; left: 0; top: 2px;">🏀</span>
+              You are responsible for maintaining the confidentiality of your
+              account
+            </li>
+            <li style="margin-bottom: 10px; padding-left: 25px; position: relative; color: #ccc;">
+              <span style="position: absolute; left: 0; top: 2px;">🏀</span>
+              You must not engage in any activity that disrupts or interferes with
+              the service
+            </li>
+          </ul>
+        </div>
 
-      <div class="terms-section">
-        <h2>6. Contact Information</h2>
-        <p>For questions about these Terms of Use, please contact us at:</p>
-        <p>
-          <a href="mailto:support@basketballbros.com" class="contact-link"
-            >support@basketballbros.com</a
-          >
-        </p>
-      </div>
+        <div class="terms-section" style="background: var(--card-bg); padding: 30px; margin-bottom: 20px; border-radius: 15px; border: 1px solid rgba(255, 255, 255, 0.1); transition: transform 0.3s ease;">
+          <h2 style="color: var(--neon-primary); margin-bottom: 20px; font-size: 1.8rem; border-bottom: 2px solid var(--neon-secondary); padding-bottom: 10px;">4. Intellectual Property</h2>
+          <p style="margin-bottom: 15px; color: #ccc;">
+            Basketball Bros and all related content are protected by copyright and
+            other intellectual property rights.
+          </p>
+        </div>
 
-      <div class="highlight-box">
-        <p>
-          By continuing to use Basketball Bros, you acknowledge that you have
-          read and understood these Terms of Use and agree to be bound by them.
-        </p>
+        <div class="terms-section" style="background: var(--card-bg); padding: 30px; margin-bottom: 20px; border-radius: 15px; border: 1px solid rgba(255, 255, 255, 0.1); transition: transform 0.3s ease;">
+          <h2 style="color: var(--neon-primary); margin-bottom: 20px; font-size: 1.8rem; border-bottom: 2px solid var(--neon-secondary); padding-bottom: 10px;">5. Prohibited Activities</h2>
+          <ul style="list-style: none; margin: 20px 0;">
+            <li style="margin-bottom: 10px; padding-left: 25px; position: relative; color: #ccc;">
+              <span style="position: absolute; left: 0; top: 2px;">🏀</span>
+              Attempting to bypass game security measures
+            </li>
+            <li style="margin-bottom: 10px; padding-left: 25px; position: relative; color: #ccc;">
+              <span style="position: absolute; left: 0; top: 2px;">🏀</span>
+              Using cheats, automation software, or exploits
+            </li>
+            <li style="margin-bottom: 10px; padding-left: 25px; position: relative; color: #ccc;">
+              <span style="position: absolute; left: 0; top: 2px;">🏀</span>
+              Harassing other users or creating offensive content
+            </li>
+            <li style="margin-bottom: 10px; padding-left: 25px; position: relative; color: #ccc;">
+              <span style="position: absolute; left: 0; top: 2px;">🏀</span>
+              Selling or transferring game accounts
+            </li>
+          </ul>
+        </div>
+
+        <div class="terms-section" style="background: var(--card-bg); padding: 30px; margin-bottom: 20px; border-radius: 15px; border: 1px solid rgba(255, 255, 255, 0.1); transition: transform 0.3s ease;">
+          <h2 style="color: var(--neon-primary); margin-bottom: 20px; font-size: 1.8rem; border-bottom: 2px solid var(--neon-secondary); padding-bottom: 10px;">6. Contact Information</h2>
+          <p style="margin-bottom: 15px; color: #ccc;">For questions about these Terms of Use, please contact us at:</p>
+          <p style="margin-bottom: 15px; color: #ccc;">
+            <a href="mailto:support@basketballbros.com" style="color: var(--neon-primary); text-decoration: none; transition: color 0.3s ease;">support@basketballbros.com</a>
+          </p>
+        </div>
+
+        <div class="highlight-box" style="background: rgba(255, 138, 0, 0.1); border-left: 4px solid var(--neon-primary); padding: 20px; margin: 20px 0; border-radius: 0 10px 10px 0;">
+          <p style="margin-bottom: 15px; color: #ccc;">
+            By continuing to use Basketball Bros, you acknowledge that you have
+            read and understood these Terms of Use and agree to be bound by them.
+          </p>
+        </div>
       </div>
-    </div>
+    </main>
 
     <footer class="footer">
       <div class="footer-content">
@@ -302,5 +174,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- External JavaScript -->
+    <script src="/js/main.js"></script>
   </body>
 </html>
